@@ -6,9 +6,9 @@ for nota in notas_alumnos:
         aprobados=aprobados+1
 print("El total de aprobados es ",aprobados)
 #Indica la nota mas alta
-nota_alta=0
+mayor=0
 for nota in notas_alumnos:  
-    if nota>nota_alta:
-        nota_alta=nota     
-print("La nota mas alta es ",nota_alta)
+    if nota>mayor:
+        mayor=nota     
+print("La nota mas alta es ",mayor)
 
