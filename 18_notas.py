@@ -1,7 +1,14 @@
-#Solicita una nota, después otra, y así sucesivamente
-# hasta introducir un cero en ese momento, no pedirá más notas
-# y mostrará la nota media de las introducidas hasta el momento.
-
+#solicita una nota, despues otra, y así sucesivamente hasta introducir un cero
+#en ese momento, no pedirá más notas y mostrará la nota media de las introducidas 
+#hasta el momento
 suma=0
-
-nota=int(input("Introduce una nota"))
+total=0
+nota=int(input("Introduce nota "))
+while nota>0:
+    total=total+1
+    suma=suma+nota
+    nota=int(input("Introduce nota"))
+try:
+    print(f"Has introducido {total} notas, y la media es: {suma/total}")  
+except ZeroDivisionError:
+    print("No hay notas")
