@@ -48,9 +48,10 @@ while opcion_elegida != 6:
             suma = 0
             for nota in notas:
                 suma += nota
-            IF(len(notas) == 0):
-            print("No hay notas para calcular la media")
-            print(f"La nota media es {suma/len(notas)}",)
+            if len(notas) == 0:
+                print("No hay notas para calcular la media")
+            else:
+                print(f"La nota media es {suma/len(notas)}")
         case 5:
             print("Las notas son: ", notas)
         case 6:
